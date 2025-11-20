@@ -85,7 +85,7 @@ bool VoxelGridBasedEuclideanCluster::cluster(
     pcl::PointXYZ point2d;
     point2d.x = point.x;
     point2d.y = point.y;
-    point2d.z = 0.0;  // Set z to 0.0 for 2D clustering
+    point2d.z = point.z;  // Set z to 0.0 for 2D clustering
     pointcloud_2d_ptr->push_back(point2d);
   }
 
